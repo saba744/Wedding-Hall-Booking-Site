@@ -1,0 +1,139 @@
+
+
+.home-container {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar {
+  background: #800000; 
+  padding: 6px 18px; 
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo img {
+  height: 40px;      
+  width: 40px;       
+  border-radius: 50%; 
+  object-fit: cover;  
+}
+.search-bar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin: 0 25px;
+}
+
+.search-bar input {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  width: 360px;
+  font-size: 14px;
+}
+
+.search-bar button {
+  padding: 6px 14px;
+  border: none;
+  background: #f8a3a3; 
+  color: #800000;
+  font-weight: bold;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-bar button:hover {
+  background: #fff;
+  color: #800000;
+}
+
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fffaf5; /* Cream text */
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #f4c2c2; /* Soft blush hover */
+}
+
+/* Hero Section - Background Image */
+.hero {
+  position: relative;
+  height: 100vh;
+   background: url("D:\MERN\project\frontend\public\bride.jpg") no-repeat center center/cover; /* 👈 Public folder image */
+  display: flex;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Overlay for dark effect */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Black transparent layer */
+}
+
+/* Text Over Image */
+.hero-text {
+  position: relative;
+  z-index: 1;
+  color: #fffaf5; /* Cream text */
+  max-width: 700px;
+}
+
+.hero-text h1 {
+  font-size: 64px;
+  font-weight: bold;
+  color: #fff; /* White */
+}
+
+.tagline {
+  font-size: 24px;
+  color: #f4c2c2; /* Blush */
+  margin: 15px 0;
+}
+
+.hero-text h3 {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #fffaf5; /* Cream */
+}
+
+.desc {
+  margin-top: 20px;
+  line-height: 1.6;
+  color: #e0e0e0; /* Light gray */
+  font-size: 20px;
+}

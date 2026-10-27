@@ -1,0 +1,83 @@
+
+/* Page container */
+.dream-venues-page {
+  padding: 5px;
+  background-color: #f4c2eb;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Page title */
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: maroon;
+  margin-bottom: 30px;
+}
+
+/* Grid layout */
+.venues-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Slightly smaller min width */
+  column-gap: 30px; /* Reduced horizontal gap */
+  row-gap: 20px; /* Optional: vertical spacing */
+  justify-content: center; /* Center grid content */
+  padding: 0 10px; /* Optional: edge padding */
+}
+
+/* Venue card */
+.venue-card {
+  width: 100%;
+  max-width: 280px; /* Slightly narrower cards */
+  height: 350px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.venue-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Venue image */
+.venue-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Venue name */
+.venue-name {
+  font-size: xx-large;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Delete button */
+.delete-btn {
+  background-color: #d9534f;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c9302c;
+}
+
+/* Message when no venues */
+.no-venues {
+  text-align: center;
+  color: #888;
+  font-size: 1.2rem;
+}

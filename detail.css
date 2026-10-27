@@ -1,0 +1,50 @@
+.venue-detail-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.venue-image img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.venue-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.venue-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.venue-location,
+.venue-price,
+.venue-capacity,
+.venue-added {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+.book-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff4081;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.book-btn:hover {
+  background-color: #e91e63;
+}

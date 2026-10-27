@@ -1,0 +1,23 @@
+.confirmation-page {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.confirmation-page h1 {
+  color: green;
+  font-size: 40px;
+}
+
+.confirmation-page p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.confirmation-page button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #ff9800;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,146 @@
+
+.banquet-container {
+  padding: 40px;
+  text-align: center;
+  background: linear-gradient(135deg, #ff90b3, #ff90b3);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: maroon;
+
+}
+.banquet-container p{
+    color: black;
+    font-size: 20px;
+
+}
+
+.banquet-list {
+  display: flex;
+  flex-direction: column;
+  gap: 70px; 
+  margin-top: 40px;
+}
+
+
+.banquet-card {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 30px;
+}
+
+.banquet-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.2);
+}
+
+
+.banquet-img {
+  width: 500px;   
+  height: 320px; 
+  object-fit: cover;
+  border-radius: 14px;
+  transition: transform 0.3s ease;
+}
+
+.banquet-card:hover .banquet-img {
+  transform: scale(1.05);
+}
+
+
+.banquet-content {
+  text-align: left;
+  padding: 20px;
+  font-size: 18px;
+  flex: 1;
+}
+
+.banquet-content h2 {
+  font-size: 30px;
+  margin-bottom: 12px;
+  color: maroon;
+  font-weight: 600;
+}
+
+.banquet-content p {
+  font-size: 17px;
+  color: black;
+  line-height: 1.8;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+
+.modal-content {
+  background: #fff;
+  padding: 35px;
+  border-radius: 18px;
+  max-width: 850px;
+  width: 90%;
+  text-align: left;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+  box-shadow: 0 14px 40px rgba(0,0,0,0.25);
+}
+
+.modal-img {
+  width: 100%;
+  height: 420px; 
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 25px;
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 10px 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+
+.close-btn:hover {
+  background: darkred;
+}
+
+
+.modal-content ul {
+  margin-top: 20px;
+  padding-left: 25px;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #444;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}

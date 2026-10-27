@@ -1,0 +1,42 @@
+.booking-page {
+  max-width: 500px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.booking-page h1 {
+  text-align: center;
+  color: #444;
+}
+
+.booking-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking-page input,
+.booking-page select,
+.date-picker {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.confirm-btn {
+  padding: 12px;
+  background: #ff6b6b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.confirm-btn:hover {
+  background: #e63946;
+}
